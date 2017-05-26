@@ -17,9 +17,11 @@ namespace SalesReport.Controllers {
         /// <returns></returns>
         public static bool Add(Models.Leave model) {
             sb.Clear();
-            sb.Append("insert into Leaves (ApplyState,EmployeeName,Department,ApplyContent,ApplyPerson,PostDate,ApplyDate,LeaveType,LeaveStart,LeaveEnd,LeaveHour,ReturnContent) ");
-            sb.Append(" values (@applyState,@employeeName,@department,@applyContent,@applyPerson,@postDate,@applyDate,@leaveType,@leaveStart,@leaveEnd,@leaveHour,@returnContent)");
+            sb.Append("insert into Leaves (AssesDay,CompanyId,ApplyState,EmployeeName,Department,ApplyContent,ApplyPerson,PostDate,ApplyDate,LeaveType,LeaveStart,LeaveEnd,LeaveHour,ReturnContent) ");
+            sb.Append(" values (@assesDay,@companyId,@applyState,@employeeName,@department,@applyContent,@applyPerson,@postDate,@applyDate,@leaveType,@leaveStart,@leaveEnd,@leaveHour,@returnContent)");
             SqlParameter[] paras = {
+                new SqlParameter("@assesDay",model.AssesDay),
+                new SqlParameter("@companyId",model.CompanyId),
                 new SqlParameter("@applyState",model.ApplyState),
                 new SqlParameter("@employeeName",model.EmployeeName),
                 new SqlParameter("@department",model.Department),

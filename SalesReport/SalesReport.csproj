@@ -94,6 +94,7 @@
     <Content Include="Handlers\HandlerUser.ashx" />
     <Content Include="Handlers\HandlerImport.ashx" />
     <Content Include="packages.config" />
+    <Content Include="UpFiles\Leave\readme.txt" />
     <Content Include="Widgets\jQueryUI\jquery-ui.min.css" />
     <Content Include="Widgets\jQueryUI\jquery-ui.min.js" />
     <Content Include="Widgets\jQueryUI\jquery-ui.theme.min.css" />
@@ -227,7 +228,12 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\FXiaoKeAPI\FXiaoKeAPI.csproj">
+      <Project>{4f1998c2-ca87-42cf-87f1-eee79cb34f2f}</Project>
+      <Name>FXiaoKeAPI</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

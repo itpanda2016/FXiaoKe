@@ -17,7 +17,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h2>考勤签到，数据导入</h2>
+    <h2>导入【考勤】数据</h2>
     <hr />
     <form action="Handlers/HandlerImport.ashx" enctype="multipart/form-data" method="post">
         <div class="form-inline">

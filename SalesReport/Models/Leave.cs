@@ -21,7 +21,7 @@ namespace SalesReport.Models {
         public string LeaveType { set; get; }
         public DateTime LeaveStart { set; get; }
         public DateTime LeaveEnd { set; get; }
-        public float LeaveHour { set; get; }
+        public decimal LeaveHour { set; get; }
         public string ReturnContent { set; get; }
     }
 }
