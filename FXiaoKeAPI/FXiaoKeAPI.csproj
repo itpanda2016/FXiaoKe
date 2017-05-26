@@ -7,8 +7,8 @@
     <ProjectGuid>{4F1998C2-CA87-42CF-87F1-EEE79CB34F2F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FxkAPI</RootNamespace>
-    <AssemblyName>FxkAPI</AssemblyName>
+    <RootNamespace>FxkApi</RootNamespace>
+    <AssemblyName>FxkApi</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccessTokenContainer.cs" />
+    <Compile Include="ContainerAccessToken.cs" />
     <Compile Include="MailList\MailListApi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

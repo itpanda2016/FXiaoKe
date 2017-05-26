@@ -83,6 +83,8 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FxkDepartment.aspx" />
+    <Content Include="FxkGetUserListDetail.aspx" />
     <Content Include="Import.aspx" />
     <Content Include="ImportAttendance.aspx" />
     <Content Include="ImportDailyLog.aspx" />
@@ -134,6 +136,20 @@
     <Compile Include="Controllers\ControllerAttendance.cs" />
     <Compile Include="Controllers\ControllerLeave.cs" />
     <Compile Include="Controllers\ControllerUser.cs" />
+    <Compile Include="FxkDepartment.aspx.cs">
+      <DependentUpon>FxkDepartment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FxkDepartment.aspx.designer.cs">
+      <DependentUpon>FxkDepartment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FxkGetUserListDetail.aspx.cs">
+      <DependentUpon>FxkGetUserListDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FxkGetUserListDetail.aspx.designer.cs">
+      <DependentUpon>FxkGetUserListDetail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Handlers\HandlerImport.ashx.cs">
       <DependentUpon>HandlerImport.ashx</DependentUpon>
     </Compile>
