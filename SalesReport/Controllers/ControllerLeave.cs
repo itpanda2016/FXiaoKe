@@ -66,5 +66,21 @@ namespace SalesReport.Controllers {
             }
             return false;
         }
+        /// <summary>
+        /// 获取假期列表，根据考核日期、公司ID
+        /// </summary>
+        /// <param name="assesDay"></param>
+        /// <param name="companyId"></param>
+        /// <returns></returns>
+        public static DataTable LeaveList(DateTime assesDay,int companyId) {
+            sb.Clear();
+            sb.Append("SELECT Id, ApplyState, EmployeeName, Department, ApplyContent, ApplyPerson, PostDate, ApplyDate, LeaveType, LeaveStart, LeaveEnd, LeaveHour, ReturnContent, AssesDay, CompanyId FROM Leaves");
+            sb.Append(" where AssesDay = '" + assesDay + "' and CompanyId = " + companyId);
+            DataTable ret = MsSQLHelper.ExecuteDataTable(sb.ToString());
+            if (ret != null && ret.Rows.Count > 0) {
+                return ret;
+            }
+            return null;
+        }
     }
 }

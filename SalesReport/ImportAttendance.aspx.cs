@@ -36,7 +36,7 @@ namespace SalesReport {
         //                lblMsg.Text = fmFileUpload1.FileName + "：上传成功，共导入数据（" + dt.Rows.Count + "）条";
         //            }
         //        }
-        //        //todo 导入后台数据库，部门字段直接存储，不拆分现在的部门
+        //        //导入后台数据库，部门字段直接存储，不拆分现在的部门
         //    }
         //}
         
