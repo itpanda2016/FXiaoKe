@@ -83,6 +83,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Export.aspx" />
     <Content Include="FxkDepartment.aspx" />
     <Content Include="FxkGetUserListDetail.aspx" />
     <Content Include="Import.aspx" />
@@ -102,6 +103,7 @@
     <Content Include="Widgets\jQueryUI\jquery-ui.min.js" />
     <Content Include="Widgets\jQueryUI\jquery-ui.theme.min.css" />
     <Content Include="Handlers\HandlerLeave.ashx" />
+    <Content Include="Handlers\HandlerExport.ashx" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -138,6 +140,13 @@
     <Compile Include="Controllers\ControllerDailyLog.cs" />
     <Compile Include="Controllers\ControllerLeave.cs" />
     <Compile Include="Controllers\ControllerUser.cs" />
+    <Compile Include="Export.aspx.cs">
+      <DependentUpon>Export.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Export.aspx.designer.cs">
+      <DependentUpon>Export.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FxkDepartment.aspx.cs">
       <DependentUpon>FxkDepartment.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -151,6 +160,9 @@
     </Compile>
     <Compile Include="FxkGetUserListDetail.aspx.designer.cs">
       <DependentUpon>FxkGetUserListDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\HandlerExport.ashx.cs">
+      <DependentUpon>HandlerExport.ashx</DependentUpon>
     </Compile>
     <Compile Include="Handlers\HandlerImport.ashx.cs">
       <DependentUpon>HandlerImport.ashx</DependentUpon>

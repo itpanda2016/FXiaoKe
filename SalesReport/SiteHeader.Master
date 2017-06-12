@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="Widgets/jQueryUI/jquery-ui.min.css" media="screen" />
     <link rel="stylesheet" href="Widgets/bootstrap-3.3.5-dist/css/bootstrap.min.css" media="screen" />
     <asp:ContentPlaceHolder ID="head" runat="server">
+
     </asp:ContentPlaceHolder>
 </head>
 <body>
@@ -48,6 +49,7 @@
                             <li><a href="ImportDailyLog.aspx">工作日志</a></li>
                         </ul>
                     </li>
+                    <li <%if (actMenu.IndexOf("Export.aspx") >= 0) { %> class="active" <% }%>><a href="Export.aspx">导出报表</a></li>
                     <li <%if (actMenu.IndexOf("Manage.aspx") >= 0) { %> class="active" <% }%>><a href="Manage.aspx">数据管理</a></li>
                     <li <%if (actMenu.IndexOf("Log.aspx") >= 0) { %> class="active" <% }%>><a href="Log.aspx">操作日志</a></li>
                     <li <%if (actMenu.IndexOf("FxkDepartment.aspx") >= 0) { %> class="active" <% }%>><a href="FxkDepartment.aspx">部门列表</a></li>

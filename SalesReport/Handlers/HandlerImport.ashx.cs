@@ -116,7 +116,7 @@ namespace SalesReport.Handlers {
                     }
                 }
                 ret += "）成功";
-                Message.Dialog(ret, "ImportLeave.aspx", true);      //todo 导入成功的返回，链接到数据管理的界面（查询时，以URL + 参数的方式实现）
+                Message.Dialog(ret, "ImportLeave.aspx", true);      //导入成功的返回，链接到数据管理的界面（查询时，以URL + 参数的方式实现）
             }
             else if (context.Request["mod"] == "dailylog") {
                 targetDirectory += "DailyLog/";
